@@ -58,6 +58,7 @@ export const createPaymentIntent = (orderId) =>
   api('/payments/create-intent', { method: 'POST', body: { orderId } });
 export const mockConfirmPayment = (orderId) =>
   api('/payments/mock-confirm', { method: 'POST', body: { orderId } });
+export const getPaymentStatus = (orderId) => api(`/payments/status/${orderId}`);
 
 // Админ
 export const adminGetOrders = () => api('/admin/orders');

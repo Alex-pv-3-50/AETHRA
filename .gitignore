@@ -1,7 +1,5 @@
 # Dependencies
 node_modules/
 
-# Environment files (ignore real .env, keep .env.example)
-.env
-.env.local
-.env.*.local
+# Build artifacts
+dist/
