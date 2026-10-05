@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-graphite antialiased;
+}
+
+/* ---- Переиспользуемые минималистичные классы ---- */
+.btn-primary {
+  @apply inline-block bg-graphite px-8 py-3 text-xs uppercase tracking-widest2 text-white transition hover:bg-sand;
+}
+.btn-outline {
+  @apply inline-block border border-graphite px-8 py-3 text-xs uppercase tracking-widest2 text-graphite transition hover:border-sand hover:text-sand;
+}
+.input {
+  @apply w-full border border-neutral-300 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-graphite;
+}
+.label {
+  @apply mb-1 block text-[11px] uppercase tracking-widest2 text-neutral-500;
+}
+.section-title {
+  @apply text-2xl font-semibold tracking-tight md:text-3xl;
+}
